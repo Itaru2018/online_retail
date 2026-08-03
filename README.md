@@ -35,6 +35,13 @@ Customers with negative Adjusted Monetary values (under 1% of the customer base)
 - The three RFM features were right-skewed; log transformation was applied (K-Means is sensitive to feature scale and distribution). Square-root transformation was also tested but was less effective than log, so log was used for all three features.
 - **Choosing k:** Inertia (Elbow method) and Silhouette Score were used together, since they capture different things — compactness vs. separation. Inertia's improvement slows noticeably after k=3. Silhouette Score peaks at k=2, but that likely under-segments the data; it does not decrease between k=3 and k=4. Both k=3 and k=4 produced well-separated clusters under PCA visualization. **k=4** was selected, since the extra cluster could reveal more detailed customer behavior.
 
+### Selecting the Number of Clusters
+
+![Elbow method and silhouette score](images/elbow.png)
+
+### PCA Visualization of the Final Four Customer Segments
+
+![PCA visualization of the four customer clusters](images/cluster.png)
 ## Cluster Profiles (log-transformed features used for interpretation)
 
 | Cluster | Label | Recency | Frequency | Monetary | Business Value |
