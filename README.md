@@ -79,13 +79,20 @@ This RFM segmentation identified four distinct customer groups with clear behavi
 
 Suggested next business actions: a loyalty program for VIPs, personalized re-engagement for less active groups, investigation into the operational causes of cancellations, and targeted marketing efforts in Germany and France.
 
+## Power BI Dashboard
+
+The cluster assignments were brought into an interactive Power BI dashboard to make the segmentation usable for non-technical stakeholders. It surfaces total customers, total revenue, and per-cluster comparisons of customer count, revenue, recency, frequency, and monetary value, with slicers for cluster and country.
+
+![Power BI dashboard overview](images/dashboard.png)
+
 ## Tech Stack
 
-Python · pandas · numpy · scikit-learn (K-Means) · rapidfuzz · matplotlib · seaborn · openpyxl
+Python · pandas · numpy · scikit-learn (K-Means) · rapidfuzz · matplotlib · seaborn · Power BI
 
 ## Deliverables
 
-- `dashboard/rfm_final_cluster.csv` — cleaned RFM features + cluster assignment (4,326 customers), prepared for a Power BI dashboard.
+- `dashboard/rfm_final_cluster.csv` — cleaned RFM features + cluster assignment (4,326 customers).
+- `dashboard/online_retail_dashboard.pbix` — interactive Power BI dashboard built on the RFM/cluster data.
 
 ## Repo Structure
 
